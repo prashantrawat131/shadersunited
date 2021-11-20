@@ -1,0 +1,28 @@
+.ss-image {
+    width: 100%;
+}
+
+.actual-image {
+    width: 200px;
+    height: 200px;
+}
+
+
+.shader-name-link{
+    color: black;
+
+}
+
+.shader-card{
+    width: 150px;
+    margin: 10px;
+    display: inline;
+    padding: 10px 10px 0 10px;
+}
+
+.download-div-col{
+    width: auto;
+    padding: 20px;
+    vertical-align: bottom;
+}
+

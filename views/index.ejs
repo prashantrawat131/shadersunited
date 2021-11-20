@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+
+<div class="container-fluid">
+    <div class="row">
+            <% shaders.forEach(shader => {%>
+            <div class="card shader-card col-3">
+                <img src=<%= "http://localhost:3000/photos?shaderName="+shader.shaderName %> class="card-img-top"
+                    alt=<%= shader.shaderName %>>
+                <div class="card-body">
+                    <a class="shader-name-link"
+                        href=<%= "http://localhost:3000/shaders?shaderName="+shader.shaderName %>
+                        class="card-text"><%= shader.shaderName %></a>
+                </div>
+            </div>
+            <%}); %>
+    </div>
+</div>
+
+
+<%- include("partials/footer") %>

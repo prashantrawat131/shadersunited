@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+<table>
+    <tr>
+        <td class="download-div-col">
+            <img src="<%= "/images/actual/" +shader.shaderName+".png"%>" class="actual-image" alt="actual-image">
+        </td>
+        <td class="download-div-col">
+            <div>
+                <h5><%= shader.shaderName.cap() %></h5>
+                <button onclick="downloadImage" id="download-button" class="button btn btn-primary">Download</button>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<img class="ss-image" src="<%= "/images/ss/"+shader.shaderName+".png" %>" />
+<%- include("partials/footer") %>
